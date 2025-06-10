@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload, faPlusSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 import axiosInstance from "../../utils/axiosInstance";
