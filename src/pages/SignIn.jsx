@@ -19,7 +19,7 @@ export default function SignIn() {
       localStorage.setItem("token", data.token);
       localStorage.setItem("userEmail",email);
       alert("Login successful");
-      navigate("/");
+      navigate("/dashboard");
     } catch (error) {
       console.error("Login error:", error);
       alert(error.response?.data?.message || "Login failed");

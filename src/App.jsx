@@ -16,10 +16,10 @@ function App() {
       <DndProvider backend={HTML5Backend}>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/sign/:documentId/:email" element={<SignDocument />} />
             <Route path='/signin' element={<SignIn />} />
-            <Route path='/signup' element={<SignUp />} />
+            <Route path='/' element={<SignUp />} />
           </Routes>
         </BrowserRouter>
       </DndProvider>

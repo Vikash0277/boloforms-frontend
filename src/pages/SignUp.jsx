@@ -21,7 +21,7 @@ export default function SignUp() {
       localStorage.setItem("token", data.token); 
       localStorage.setItem("userEmail",email);
       alert("Signup successful");
-      navigate("/"); // Redirect after signup
+      navigate("/dashboard"); 
     } catch (error) {
       console.error("Signup error:", error);
       alert(error.response?.data?.message || "Signup failed");
