@@ -1,0 +1,18 @@
+
+@import "tailwindcss";
+
+/* Hide resize handles by default */
+.react-resizable-handle {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.react-resizable {
+  transition: width 0.15s ease, height 0.15s ease;
+}
+
+
+/* Show handles when the parent is hovered or focused */
+.group:hover .react-resizable-handle,
+.group:focus-within .react-resizable-handle {
+  opacity: 1;
+}
