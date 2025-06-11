@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import axiosInstance from "../../utils/axiosInstance";
 
 export default function SignIn() {
@@ -69,6 +69,13 @@ export default function SignIn() {
           >
             Sign In
           </button>
+          <div className="flex items-center justify-center">
+            <h1>Don't have an account?</h1>
+            <Link to="/signup" className="text-blue-600 hover:underline">
+              SignUp
+            </Link>
+          </div>
+
         </form>
       </div>
     </div>

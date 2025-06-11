@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axiosInstance from "../../utils/axiosInstance";
 
 export default function SignUp() {
@@ -67,6 +67,14 @@ export default function SignUp() {
             />
           </div>
           <button type="submit" className="w-full bg-purple-500 text-white py-2 rounded hover:bg-purple-600 transition duration-200">Sign Up</button>
+          
+          <div className="flex items-center justify-center">
+            <h1>Already have an account?</h1>
+            <Link to="/signin" className="text-blue-600 hover:underline">
+              Login
+            </Link>
+          </div>
+
         </form>
       </div>
     </div>
