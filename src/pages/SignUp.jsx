@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axiosInstance from "../../utils/axiosInstance";
+import Navbar from "../components/Navbar";
 
 export default function SignUp() {
   const [name, setName] = useState("");
@@ -29,7 +30,9 @@ export default function SignUp() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
+    <>
+      <Navbar/>
+      <div className="flex items-center justify-center h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
         <form onSubmit={handleSubmit}>
@@ -78,5 +81,6 @@ export default function SignUp() {
         </form>
       </div>
     </div>
+    </>
   );
 }

@@ -47,7 +47,7 @@ export default function Sidebar({ onAddElement }) {
         </div>
       )}
 
-      {/* SignatureButton replaces the old signature upload button */}
+      
       <SignatureButton onAddSignature={onAddElement} />
 
       
