@@ -30,12 +30,6 @@ export default function Navbar() {
                     {token ? (
                         <>
                             <button 
-                                onClick={() => navigate('/dashboard')} 
-                                className="hidden sm:block text-sm font-semibold text-gray-600 hover:text-gray-900 transition-colors px-4 py-2"
-                            >
-                                Dashboard
-                            </button>
-                            <button 
                                 onClick={handleLogout} 
                                 className="text-sm font-semibold bg-red-50 text-red-600 px-5 py-2.5 rounded-lg hover:bg-red-100 active:scale-95 transition-all shadow-sm"
                             >
