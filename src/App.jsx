@@ -1,4 +1,3 @@
-
 import './App.css'
 import Dashboard from './pages/Dashboard'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -7,6 +6,7 @@ import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
+import LandingPage from './pages/LandingPage'
 
 function App() {
   
@@ -16,10 +16,11 @@ function App() {
       <DndProvider backend={HTML5Backend}>
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<LandingPage />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/sign/:documentId/:email" element={<SignDocument />} />
             <Route path='/signin' element={<SignIn />} />
-            <Route path='/' element={<SignUp />} />
+            <Route path='/signup' element={<SignUp />} />
           </Routes>
         </BrowserRouter>
       </DndProvider>
