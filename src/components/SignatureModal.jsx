@@ -73,7 +73,7 @@ export default function SignatureModal({ onClose, onSave }) {
     if (!previewEl) return;
 
     const canvas = await html2canvas(previewEl, {
-      backgroundColor: "#ffffff",
+      backgroundColor: "transparent"
     });
     const dataUrl = canvas.toDataURL("image/png");
 
